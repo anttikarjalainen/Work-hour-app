@@ -1,0 +1,27 @@
+<h2>Created workshift:</h2>
+
+<div fxLayout="row" fxLayoutAlign="center start">
+  <div fxLayout="column" class="term-detail">
+
+  <mat-list>
+  <mat-list-item *ngFor="let workshift of workShift">
+
+    Time:
+    {{workshift.startTime}}
+    -
+    {{workshift.endTime}}
+    ,
+    date:
+    {{workshift.workDate}},
+
+    length:
+    {{workshift.workShiftLength + 'hours'}}
+
+  </mat-list-item>
+  </mat-list>
+
+  <button (click)="createAnother()">Create another one</button>
+
+
+  </div>
+  </div>
